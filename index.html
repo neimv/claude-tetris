@@ -47,11 +47,34 @@
       <div class="overlay-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+        <div id="gameover-records" class="records hidden">
+          <form id="name-form" class="name-form hidden">
+            <p class="record-msg">¡Entraste al top 5!</p>
+            <input id="name-input" type="text" maxlength="12" placeholder="Anónimo" autocomplete="off" />
+            <button type="button" id="save-btn">Guardar</button>
+          </form>
+          <p class="records-title">MEJORES PUNTUACIONES</p>
+          <ol id="go-top" class="top-list"></ol>
+          <p id="go-stats" class="records-stats"></p>
+          <button type="button" id="go-reset-btn" class="link-btn">Resetear records</button>
+        </div>
         <button id="restart-btn">Reiniciar</button>
+      </div>
+    </div>
+
+    <div id="start-overlay" class="overlay hidden">
+      <div class="overlay-box">
+        <p id="start-title">TETRIS</p>
+        <p class="records-title">MEJORES PUNTUACIONES</p>
+        <ol id="start-top" class="top-list"></ol>
+        <p id="start-stats" class="records-stats"></p>
+        <button id="start-btn">Jugar</button>
+        <button type="button" id="start-reset-btn" class="link-btn">Resetear records</button>
       </div>
     </div>
   </div>
 
+  <script src="records.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
