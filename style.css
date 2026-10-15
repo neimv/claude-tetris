@@ -150,3 +150,44 @@ kbd {
 #restart-btn:hover {
   background: #9bbdff;
 }
+
+/* ---- Selector de skin ---- */
+#skin {
+  background: #22223a;
+  color: #ccc;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+/* ---- Skins: fondos de los canvas y acentos ---- */
+body[data-skin="neon"] { background: #000; }
+body[data-skin="neon"] #board,
+body[data-skin="neon"] #next-canvas {
+  background: #000;
+  border-color: #00f0ff;
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45);
+}
+body[data-skin="neon"] .value { color: #00f0ff; text-shadow: 0 0 8px #00f0ff; }
+
+body[data-skin="pastel"] { background: #2a2838; }
+body[data-skin="pastel"] #board,
+body[data-skin="pastel"] #next-canvas {
+  background: #36344a;
+  border-color: #6b5f8a;
+  border-radius: 14px;
+}
+body[data-skin="pastel"] .value { color: #f7b6d2; }
+
+body[data-skin="pixel"] { background: #101018; }
+body[data-skin="pixel"] #board,
+body[data-skin="pixel"] #next-canvas {
+  background: #15151f;
+  border: 3px solid #4a4a5e;
+  border-radius: 0;
+}
+body[data-skin="pixel"] .value,
+body[data-skin="pixel"] .label { font-family: 'Courier New', Courier, monospace; }
+body[data-skin="pixel"] .value { color: #f2c230; }
